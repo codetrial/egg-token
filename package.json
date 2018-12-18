@@ -1,14 +1,18 @@
 {
   "name": "egg-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Egg.js middleware that uses encrypted token to authenticate.",
   "eggPlugin": {
     "name": "token"
   },
   "keywords": [
     "egg",
-    "eggPlugin",
-    "egg-plugin"
+    "egg-token",
+    "egg-plugin",
+    "koa",
+    "middleware",
+    "authenticate",
+    "authorization"
   ],
   "dependencies": {},
   "devDependencies": {

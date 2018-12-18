@@ -11,7 +11,7 @@ Egg.js middleware that uses encrypted token to authenticate.
 
 ```bash
 npm i egg-token
-// or
+# or
 yarn add egg-token
 ```
 
