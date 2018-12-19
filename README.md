@@ -33,13 +33,33 @@ exports.middleware = ['token'];
 
 exports.token = {
   type: 'md5',
-  secret: 'your-magic-secret-key'
+
+  apps: {
+    felixpy: {
+      secret: 'XnMib79vzwP01gtr',
+      expires: 30000
+    },
+    codetrial: {
+      secret: 'mi9yNGT6zwrqMv8z',
+      expires: 30000
+    }
+  }
 };
 ```
 
 `type` is the algorithm that can be used to generate hash digests.
 
 See [crypto.createHash](https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options) for more detail.
+
+Each key of `apps` is the application's code, `secret` is used to generate token and `expires` is the validity period of the token.
+
+The way to generate tokens is as follows:
+
+```js
+const ts = Date.now();
+const md5Value = md5(`${APP_CODE}:${ts}:${APP_SECRET}`);
+const token = base64Encode(`${APP_CODE}:${ts}:${md5Value}`);
+```
 
 ## Example
 
@@ -52,7 +72,7 @@ const axios = require('axios');
 const hash = crypto.createHash('md5');
 
 const APP_CODE = 'felixpy';
-const APP_SECRET = 'your-magic-secret-key';
+const APP_SECRET = 'XnMib79vzwP01gtr';
 
 const ts = Date.now();
 const md5Value = hash.update(`${APP_CODE}:${ts}:${APP_SECRET}`).digest('hex');
