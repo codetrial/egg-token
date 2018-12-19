@@ -54,7 +54,7 @@ const hash = crypto.createHash('md5');
 const APP_CODE = 'felixpy';
 const APP_SECRET = 'your-magic-secret-key';
 
-const ts = new Date().getTime();
+const ts = Date.now();
 const md5Value = hash.update(`${APP_CODE}:${ts}:${APP_SECRET}`).digest('hex');
 
 const token = Buffer.from(`${APP_CODE}:${ts}:${md5Value}`).toString('base64');
