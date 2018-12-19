@@ -1,6 +1,6 @@
 {
   "name": "egg-token",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Egg.js middleware that uses encrypted token to authenticate.",
   "eggPlugin": {
     "name": "token"

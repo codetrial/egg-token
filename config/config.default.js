@@ -4,9 +4,10 @@
  * egg-token default config
  * @member Config#token
  * @property {String} type - encryption algorithm
- * @property {String} secret - secret key
+ * @property {Object} apps - authorized applications
  */
 exports.token = {
   type: 'md5',
-  secret: 'your-magic-secret-key',
+
+  apps: {},
 };
