@@ -1,6 +1,6 @@
 {
   "name": "egg-token",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Egg.js middleware that uses encrypted token to authenticate.",
   "eggPlugin": {
     "name": "token"
@@ -47,12 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-token.git"
+    "url": "git+https://github.com/codetrial/egg-token.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/codetrial/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-token#readme",
+  "homepage": "https://github.com/codetrial/egg-token#readme",
   "author": "felixpy",
   "license": "MIT"
 }

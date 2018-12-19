@@ -59,7 +59,7 @@ const md5Value = hash.update(`${APP_CODE}:${ts}:${APP_SECRET}`).digest('hex');
 
 const token = Buffer.from(`${APP_CODE}:${ts}:${md5Value}`).toString('base64');
 
-axios.get('/', {
+axios.get('/url/to/your/egg/service', {
   headers: {
     'egg-api-token': token
   }
