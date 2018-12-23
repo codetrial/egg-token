@@ -1,6 +1,6 @@
 {
   "name": "egg-token",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Egg.js middleware that uses encrypted token to authenticate.",
   "eggPlugin": {
     "name": "token"
@@ -50,7 +50,7 @@
     "url": "git+https://github.com/codetrial/egg-token.git"
   },
   "bugs": {
-    "url": "https://github.com/codetrial/egg/issues"
+    "url": "https://github.com/codetrial/egg-token/issues"
   },
   "homepage": "https://github.com/codetrial/egg-token#readme",
   "author": "felixpy",
